@@ -1,8 +1,9 @@
 #!/bin/bash
 #
-# cloud init script for full ELK 7.8 on centos 7
+# cloud init script for full ELK 7.8 on ubuntu
 # TODO:
 #	- better logging than >> $LOG
+# 	- some cloud images have issues with space, switch to /dev/shm instead of /tmp as needed
 LOG=/var/log/user_data.sh.log
 
 function apt_install_desired {
